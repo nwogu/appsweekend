@@ -14,7 +14,15 @@ class Project(models.Model):
 
     description = models.TextField(blank=True)
 
-    link = models.CharField(max_length=255, blank=True)
+    image_url = models.CharField(max_length=255, blank=True)
+
+    app_link = models.CharField(max_length=255, blank=True)
+
+    blog_link = models.CharField(max_length=255, blank=True)
+
+    frontend_github_link = models.CharField(max_length=255, blank=True)
+
+    backend_github_link = models.CharField(max_length=255, blank=True)
 
     status = models.CharField(max_length=255, choices=PROJECT_STATUS, default="draft")
 

@@ -75,7 +75,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'appsweekend.wsgi.application'
 
 STATICFILES_DIRS = [
-    "static",
+    
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
